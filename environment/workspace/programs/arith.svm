@@ -1,0 +1,8 @@
+# 2 + 3 * 4 = 14 if left-to-right stack style: push 2, push 3, push 4, mul, add
+PUSH 2
+PUSH 3
+PUSH 4
+MUL
+ADD
+PRINT
+HALT
