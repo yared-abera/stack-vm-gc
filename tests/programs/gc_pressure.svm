@@ -1,0 +1,15 @@
+# Allocate many short-lived objects; GC must reclaim so we can keep going.
+PUSH 300
+LOOP:
+DUP
+JZ DONE
+ALLOC 1
+DROP
+PUSH 1
+SUB
+JMP LOOP
+DONE:
+DROP
+PUSH 42
+PRINT
+HALT
